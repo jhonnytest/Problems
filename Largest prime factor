@@ -1,0 +1,8 @@
+var result = 0;
+var number = 13195;
+for ( var factor = 1; factor < number; factor++ ) {
+    if ( number % factor === 0 ) {
+        result = factor;
+    }
+}
+console.log(result);
