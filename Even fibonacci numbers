@@ -1,0 +1,15 @@
+var firstNum = 0;
+var nextNum = 1;
+var total = 0;
+var sum = 0;
+var n = 0;
+while ( n < 4000000 ) {
+    sum = firstNum + nextNum;
+    firstNum = nextNum;
+    nextNum = sum;
+    if ( sum % 2 === 0 ) {
+        total += sum;
+    }
+    n++;
+}
+console.log(total);
